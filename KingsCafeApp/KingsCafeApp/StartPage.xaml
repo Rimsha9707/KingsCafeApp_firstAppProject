@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KingsCafeApp.StartPage" BackgroundColor="#ff914d">
+    <ContentPage.Content>
+        
+        <StackLayout Padding="34" VerticalOptions="CenterAndExpand">
+            <Image Source="ic_kc_gen_white.png"/>
+            <Label  HorizontalOptions="CenterAndExpand" Text="King's Cafe" TextColor="White" FontSize="40"/>
+            <Label  HorizontalOptions="CenterAndExpand" Text="Taste ka bhndaarrr" TextColor="White" FontSize="20" Margin="0,0,0,50"/>
+            <Button Text="Get Started" BorderWidth="4" BorderColor="White" CornerRadius="12"  BackgroundColor="#ff914d" TextColor="White" x:Name="btnGetStarted" Clicked="btnGetStarted_Clicked"/>
+
+            <StackLayout Orientation="Horizontal"  HorizontalOptions="CenterAndExpand">
+                <Label Text="Admin" TextColor="White" FontSize="16">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" ></TapGestureRecognizer>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text=" | " TextColor="White" />
+                <Label Text="Worker" TextColor="White" FontSize="16">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" ></TapGestureRecognizer>
+                    </Label.GestureRecognizers>
+                </Label> 
+                <Label Text=" | " TextColor="White" />
+                <Label Text="Reset Default" TextColor="White" FontSize="16">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" ></TapGestureRecognizer>
+                    </Label.GestureRecognizers>
+                </Label>
+
+            </StackLayout>
+        </StackLayout>
+       
+
+    </ContentPage.Content>
+</ContentPage>

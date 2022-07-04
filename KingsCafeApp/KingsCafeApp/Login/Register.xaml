@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KingsCafeApp.Login.Register"
+             Title="Register">
+    <ContentPage.Content>
+        <StackLayout Padding="35">
+            <Entry IsTextPredictionEnabled="True" Keyboard="Chat" Placeholder="Name.." x:Name="txtName"></Entry>
+            <Entry Keyboard="Numeric"  Placeholder="Phone No.." x:Name="txtPhone"></Entry>
+            <Entry Keyboard="Email" Placeholder="Email.." x:Name="txtEmail"></Entry>
+            <Entry IsPassword="True" Placeholder="Password.." x:Name="txtPassword"></Entry>
+            <Entry IsPassword="True" Placeholder="Conmfirm Password.." x:Name="txtCPassword"></Entry>
+            <Button Text="Register" Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
