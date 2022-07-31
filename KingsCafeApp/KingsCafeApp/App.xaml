@@ -27,6 +27,23 @@
                     </VisualStateGroupList>
                 </Setter>
             </Style>
-        </ResourceDictionary>        
+        </ResourceDictionary>
+
+        <ResourceDictionary>
+            <OnPlatform x:Key="FontAwesome" x:TypeArguments="x:String">
+                <On Platform="Android" Value="fontawesome-webfont.ttf#fontawesome"/>
+            </OnPlatform>
+        </ResourceDictionary>
+        <ResourceDictionary>
+            <OnPlatform x:Key="Themify" x:TypeArguments="x:String">
+                <On Platform="Android" Value="themify.ttf#themify"/>
+            </OnPlatform>
+        </ResourceDictionary>
+        <ResourceDictionary>
+            <OnPlatform x:Key="MaterialDesign" x:TypeArguments="x:String">
+                <On Platform="Android" Value="materialdesignicons-webfont.ttf#materialdesignicons webfont"/>
+            </OnPlatform>
+        </ResourceDictionary>
+
     </Application.Resources>
 </Application>

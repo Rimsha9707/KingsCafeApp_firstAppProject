@@ -11,6 +11,7 @@
                 </Image.GestureRecognizers>
             </Image>
             <Entry x:Name="txtCatName" Placeholder="Category Name" Keyboard="Chat"/>
+            <ActivityIndicator x:Name="LoadingInd" IsRunning="False"/>
             <Button Text="Add Category" x:Name="btnCat" Clicked="btnCat_Clicked"></Button>
         </StackLayout>
     </ContentPage.Content>

@@ -5,7 +5,8 @@
              Title="UserList"
              >
     <ContentPage.Content>
-        <StackLayout Padding="34">
+        <StackLayout Padding="30">
+            <ActivityIndicator x:Name="LoadingInd" IsRunning="False"/>
             <ListView x:Name="DataList" ItemTapped="DataList_ItemTapped">
                 <ListView.ItemTemplate>
                     <DataTemplate>

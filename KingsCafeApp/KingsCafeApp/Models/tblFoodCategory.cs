@@ -5,7 +5,7 @@ using System.Text;
 
 namespace KingsCafeApp.Models
 {
-    class tblFoodCategory
+    public class tblFoodCategory
     {
         [PrimaryKey, AutoIncrement]
         public int FOOD_CATEGORIES_ID { get; set; }

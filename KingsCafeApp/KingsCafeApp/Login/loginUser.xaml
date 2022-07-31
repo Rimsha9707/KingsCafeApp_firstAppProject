@@ -5,15 +5,19 @@
              Title="Login"
              >
     <ContentPage.Content >
-        <StackLayout Padding="34" VerticalOptions="CenterAndExpand">
-            <Entry Keyboard="Email" x:Name="txtEmail" Placeholder="Email..."/>
-            <Entry IsPassword="True" x:Name="txtPassword" Placeholder="Password..."/>
+
+
+        <StackLayout Padding="34" VerticalOptions="CenterAndExpand" >
+            <Entry Keyboard="Email" TextColor="#ff914d" x:Name="txtEmail" Placeholder="Email..."/>
+            <Entry IsPassword="True" TextColor="#ff914d" x:Name="txtPassword" Placeholder="Password..."/>
+            <ActivityIndicator x:Name="LoadingInd" IsRunning="False"/>
             <Button Text="Login" Clicked="Button_Clicked"/>
-            <Label Text="SignUp now" >
+            <Label Text="SignUp now" TextColor="#ff914d" FontAttributes="Bold">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
                 </Label.GestureRecognizers>
             </Label>
         </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>
